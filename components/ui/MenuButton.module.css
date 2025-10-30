@@ -1,0 +1,29 @@
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--sand-500);
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  font-size: 0.92rem;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(59, 45, 32, 0.2);
+  background: var(--sand-600);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 2px;
+}

@@ -1,0 +1,134 @@
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr);
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.heroCard {
+  background: linear-gradient(135deg, #3f65f2, #5f7cf6);
+  color: #fff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 36px rgba(63, 101, 242, 0.28);
+  display: grid;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroCard::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  top: -40px;
+  right: -60px;
+  filter: blur(0);
+}
+
+.heroTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.heroSubtitle {
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 9px 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.analysisCard {
+  background: var(--sand-300);
+  border-radius: 28px;
+  padding: 28px 32px;
+  box-shadow: var(--shadow-soft);
+  color: var(--text-dark);
+}
+
+.analysisCard h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+
+.analysisCard ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+.chartsRow {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.chartCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.summary {
+  margin-top: 36px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 24px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.summaryItem {
+  min-width: 180px;
+}
+
+.summaryItem strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+.summaryItem span {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1280px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .chartsRow {
+    grid-template-columns: 1fr;
+  }
+}

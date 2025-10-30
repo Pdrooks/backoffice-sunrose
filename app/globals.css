@@ -1,0 +1,49 @@
+:root {
+  --sand-100: #f3ece9;
+  --sand-200: #e8dfda;
+  --sand-300: #d6c4b3;
+  --sand-400: #c0aa91;
+  --sand-500: #9b8067;
+  --sand-600: #7e6854;
+  --brown-700: #5f4b3b;
+  --accent-blue: #3f65f2;
+  --accent-green: #3aa86b;
+  --accent-amber: #f49b1a;
+  --text-dark: #2f2a26;
+  --text-muted: #6c6762;
+  --shadow-soft: 0 10px 18px rgba(59, 45, 32, 0.18);
+  --radius-pill: 24px;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  background: var(--sand-100);
+  color: var(--text-dark);
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(155, 128, 103, 0.3);
+}
