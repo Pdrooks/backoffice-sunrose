@@ -24,16 +24,16 @@ export type ReportDataPoint = {
 export const users: UserRecord[] = [
   {
     id: "u-001",
-    name: "Ana Beatriz Costa",
-    email: "ana.costa@sunrose.com",
+    name: "Pedro Diniz Pires",
+    email: "pedro.diniz@sunrose.com",
     password: "sunrose123",
     role: "Administrador"
   },
   {
     id: "u-002",
-    name: "Marcos Vinícius",
-    email: "marcos.vinicius@sunrose.com",
-    password: "dashboard2025",
+    name: "Teste",
+    email: "teste@sunrose.com",
+    password: "teste",
     role: "Analista"
   },
   {
