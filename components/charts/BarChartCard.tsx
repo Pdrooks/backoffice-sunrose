@@ -7,7 +7,8 @@ import {
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  TooltipItem
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import styles from "./chart-card.module.css";
@@ -54,8 +55,10 @@ export const BarChartCard = ({
         borderColor: "rgba(95, 75, 59, 0.6)",
         borderWidth: 1,
         callbacks: {
-          label: (context: { raw: number }) =>
-            currency ? `R$ ${context.raw.toLocaleString("pt-BR")}` : context.raw
+          label: (tooltipItem: TooltipItem<"bar">) => {
+            const value = tooltipItem.raw as number;
+            return currency ? `R$ ${value.toLocaleString("pt-BR")}` : value.toString();
+          }
         }
       }
     },

@@ -13,7 +13,6 @@ export const authenticateUser = (email: string, password: string): PublicUser | 
     return null;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { password: _password, ...publicUser } = found;
+  const { password: _, ...publicUser } = found;
   return publicUser;
 };
