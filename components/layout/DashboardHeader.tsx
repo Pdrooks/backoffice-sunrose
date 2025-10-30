@@ -31,7 +31,6 @@ export const DashboardHeader = ({ backHref }: DashboardHeaderProps) => {
         </span>
         <span>{displayName}</span>
       </div>
-      <div className={styles.right}>POWER BI</div>
     </header>
   );
 };
